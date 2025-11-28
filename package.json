@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/Sun-is-still-high/backend-project-44/issues"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sun-is-still-high/backend-project-44.git"
