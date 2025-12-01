@@ -1,7 +1,7 @@
 install:
 	npm ci
 
-publich:
+publish:
 	npm publish --dry-run
 
 brain-games:
