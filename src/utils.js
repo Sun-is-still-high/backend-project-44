@@ -5,7 +5,7 @@
  * @returns number
  */
 export function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
+  return Math.floor(Math.random() * max)
 }
 
 /**
@@ -14,6 +14,6 @@ export function getRandomInt(max) {
  * @returns T
  */
 export function getRandomElement(array) {
-  const index = getRandomInt(array.length);
-  return array[index];
+  const index = getRandomInt(array.length)
+  return array[index]
 }

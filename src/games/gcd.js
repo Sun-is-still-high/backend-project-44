@@ -1,9 +1,9 @@
 // @ts-check
 
-import { runGame } from "../index.js";
-import { getRandomInt } from "../utils.js";
+import { runGame } from '../index.js'
+import { getRandomInt } from '../utils.js'
 
-const GAME_INSTRUCTION = 'Find the greatest common divisor of given numbers.';
+const GAME_INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 
 /**
  * @param {number} a first number
@@ -12,24 +12,24 @@ const GAME_INSTRUCTION = 'Find the greatest common divisor of given numbers.';
  */
 function gcd(a, b) {
   if (b === 0) {
-    return a;
+    return a
   }
-  return gcd(b, a % b);
+  return gcd(b, a % b)
 }
 
 /**
  * @returns {{question: string, correctAnswer: string}}
  */
 function generateRound() {
-  const num1 = getRandomInt(100) + 1;
-  const num2 = getRandomInt(100) + 1;
+  const num1 = getRandomInt(100) + 1
+  const num2 = getRandomInt(100) + 1
 
-  const question = `${num1} ${num2}`;
-  const correctAnswer = String(gcd(num1, num2));
+  const question = `${num1} ${num2}`
+  const correctAnswer = String(gcd(num1, num2))
 
-  return { question, correctAnswer };
+  return { question, correctAnswer }
 }
 
 export function main() {
-  runGame(GAME_INSTRUCTION, generateRound);
+  runGame(GAME_INSTRUCTION, generateRound)
 }
