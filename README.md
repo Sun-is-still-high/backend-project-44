@@ -8,3 +8,5 @@
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Sun-is-still-high/backend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Sun-is-still-high/backend-project-44/actions)
+
+Even game asciinema: https://asciinema.org/a/ryLEJCmAmyAFQ73WmndOy1wRK
