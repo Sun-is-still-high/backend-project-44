@@ -1,16 +1,9 @@
 // @ts-check
 
 import { runGame } from "../index.js";
+import { getRandomInt } from "../utils.js";
 
 const GAME_INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-/**
- * @param {number} max max integer
- * @returns number
- */
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
 
 /**
  * @param {number} num integer to check

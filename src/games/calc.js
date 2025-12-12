@@ -1,26 +1,10 @@
 // @ts-check
 
 import { runGame } from "../index.js";
+import { getRandomInt, getRandomElement } from "../utils.js";
 
 const GAME_INSTRUCTION = 'What is the result of the expression?';
 const OPERATIONS = ['+', '-', '*'];
-
-/**
- * @param {number} max max integer
- * @returns number
- */
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
-/**
- * @param {Array<string>} array
- * @returns string
- */
-function getRandomElement(array) {
-  const index = getRandomInt(array.length);
-  return array[index];
-}
 
 /**
  * @param {number} num1
