@@ -2,6 +2,7 @@
 
 import { GREETING, greetUser, NAME_QUESTION } from './constants.js'
 import { getUserInput } from './user-input.js'
+import { randomInt } from 'node:crypto'
 
 const GAME_INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 const ROUNDS_COUNT = 3
@@ -11,7 +12,7 @@ const ROUNDS_COUNT = 3
  * @returns number
  */
 function getRandomInt(max) {
-  return Math.floor(Math.random() * max)
+  return randomInt(max)
 }
 
 /**
